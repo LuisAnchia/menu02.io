@@ -1,6 +1,6 @@
 body{
     background: rgba(0, 0, 0, 0.46); 
-    background: url(./img/texture_3-mobile.png);
+    background: url(/assets/img/texture_3-mobile.png);
     background-size: cover;
 }
 
