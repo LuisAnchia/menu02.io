@@ -56,11 +56,11 @@ h1 span{
 
 .box li {
     text-align: left; 
-    font-size: 1.06rem;
+    font-size: 0.98rem;
 }
 
 .small-text {
-    font-size: 0.58rem;
+    font-size: 0.5rem;
 }
 
 h1 {
@@ -74,5 +74,5 @@ h1 {
 img.hamburgesa {
     width: 100%;
     position: absolute;
-    top: 97%;
+    top: 85%;
 }
