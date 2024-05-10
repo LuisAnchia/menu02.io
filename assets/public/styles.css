@@ -84,8 +84,28 @@ img.hamburgesa {
 
 /*Estilos de Tablet*/
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 767px) {
+    .container1 {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 764px) and (max-width: 1024px) {
     h1 {
         font-size: 64px;
+    }
+}
+
+@media screen and (min-width: 764px) and (max-width: 1024px) {
+    .padre {
+        display: flex;
+        justify-content: center; /* Centra horizontalmente el contenido */
+        gap: 10%; /* Establece el margen horizontal del 10% */
+    }
+}
+
+@media screen and (min-width: 764px) and (max-width: 1024px) {
+    img.hamburgesa {
+        top: 100%;
     }
 }
