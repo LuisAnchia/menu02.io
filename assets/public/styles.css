@@ -34,12 +34,9 @@ h1 span{
     flex-direction: column;
 }
 
-.container {
-    width: 230px;
-    margin: 0 auto;
-}
-
-.container1 {
+.container,
+.container1,
+.container2 {
     width: 230px;
     margin: 0 auto;
 }
@@ -107,5 +104,53 @@ img.hamburgesa {
 @media screen and (min-width: 764px) and (max-width: 1024px) {
     img.hamburgesa {
         top: 100%;
+    }
+}
+
+/*Estilos de Tablet final*/
+
+/*Estilos de Desktop*/
+
+@media screen and (min-width: 1025px) and (max-width: 2500px) {
+    body{
+        background-size: contain;
+    }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 2500px) {
+    h1 {
+        font-size: 64px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .container2 {
+        display: none;
+    }
+}
+
+
+@media screen and (min-width: 1025px) and (max-width: 2500px) {
+    .padre {
+        display: flex;
+        justify-content: center;
+        gap: 65%; 
+    }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 2500px) {
+    img.hamburgesa {
+        width: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    } 
+}
+
+@media screen and (min-width: 1025px) and (max-width: 2500px) {
+    .menuIzquierda,
+    .menuDerecha {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
     }
 }
