@@ -6,7 +6,6 @@ body{
 
 .contenedor {
     position: relative;
-    z-index: 1;
 }
 
 h1{
@@ -139,7 +138,7 @@ img.hamburgesa {
     .padre {
         display: flex;
         justify-content: center;
-        gap: 50%;
+        gap: 48%;
         margin-top: -145px;
     }
 }
@@ -219,9 +218,36 @@ img.hamburgesa {
     }
 }
 
+.contenedorFlechas .flechas .flechasIzquierda .arrow:hover,
+.contenedorFlechas .flechas .flechasDerecha .arrow:hover {
+    filter: drop-shadow(0px 0px 26px yellow) !important;
+}
+
+
+@keyframes unirFlechas {
+    0% {
+        transform: translateX(-0%);
+        filter: opacity(0);
+    }
+    50% {
+        transform: translateX(-0%) scale(0.2);
+        filter: opacity(0);
+    }
+    100% {
+        transform: translateX(-0%);
+    }
+}
+
+.contenedorFlechas .flechas {
+    animation: unirFlechas 2s ease-in-out forwards;
+    z-index: 0;
+}
+
+
 @media screen and (min-width: 1025px) and (max-width: 2500px) {
     .contenedorFlechas {
         text-align: center;
+        z-index: 0;
     }
 }
 
@@ -232,6 +258,7 @@ img.hamburgesa {
         align-items: center; 
         position: absolute;
         top: 40%;
+        z-index: 0;
     }    
 }
 
@@ -274,5 +301,12 @@ img.hamburgesa {
 @media screen and (min-width: 1025px) and (max-width: 2500px) {
     .box {
         border: 1px solid #F9C50D;
+        background: none;
+        position: relative;
+        z-index: 2;
+    }
+    
+    .box:hover{
+        background: #f9c50d1c;
     }
 }
