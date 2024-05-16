@@ -47,6 +47,8 @@ h1 span{
     color: white; 
     background-color: #00000073;
     border-radius: 25.36px;
+    position: relative;
+    z-index: 1;
 }
 
 .box ul {
