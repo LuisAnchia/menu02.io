@@ -190,6 +190,11 @@ img.hamburgesa {
     }
 }
 
+@media screen and (min-width: 1600px) and (max-width: 2500px) {
+    img.hamburgesa {
+        top: 30%; /* Posicionamiento vertical inicial */
+    }
+}
 
 
 @media screen and (min-width: 1025px) and (max-width: 2500px) {
@@ -200,13 +205,25 @@ img.hamburgesa {
     }
 }
 
-@media screen and (min-width: 1025px) and (max-width: 2500px) {
+@media screen and (min-width: 1025px) and (max-width: 1439px) {
+    .small-text {
+        font-size: 0.6rem;
+    }
+}
+
+@media screen and (min-width: 1440px) and (max-width: 2500px) {
     .small-text {
         font-size: 0.85rem;
     }
 }
 
-@media screen and (min-width: 1025px) and (max-width: 2500px) {
+@media screen and (min-width: 1025px) and (max-width: 1439px) {
+    .box li {
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (min-width: 1440px) and (max-width: 2500px) {
     .box li {
         text-align: left;
         font-size: 1.55rem;
@@ -264,6 +281,15 @@ img.hamburgesa {
     }    
 }
 
+@media screen and (min-width: 1600px) and (max-width: 2500px) {
+    .flechas {
+        top: 30%;
+        gap: 9%;
+        left: 4%;
+    }    
+}
+
+
 @media screen and (min-width: 1025px) and (max-width: 2500px) {
     .flechasIzquierda {
         display: flex;
@@ -282,7 +308,13 @@ img.hamburgesa {
     }   
 }
 
-@media screen and (min-width: 1025px) and (max-width: 2500px) {
+@media screen and (min-width: 1025px) and (max-width: 1439px) {
+    .container, .container1, .container2 {
+        width: 260px;
+    }
+}
+
+@media screen and (min-width: 1440px) and (max-width: 2500px) {
     .container, .container1, .container2 {
         width: 345px;
     }
